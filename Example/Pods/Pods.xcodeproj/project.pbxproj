@@ -47,17 +47,6 @@
 		D746D29D22C1DFDF0016A840 /* BNModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D746D29722C1DFDF0016A840 /* BNModel.h */; };
 		D746D29E22C1DFDF0016A840 /* BNModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D746D29822C1DFDF0016A840 /* BNModel.m */; };
 		D746D29F22C1DFDF0016A840 /* UIImage+BNImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D746D29922C1DFDF0016A840 /* UIImage+BNImage.h */; };
-		D782D51D22C2043900F5BB1E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D51C22C2043900F5BB1E /* CFNetwork.framework */; };
-		D782D51F22C2043E00F5BB1E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D51E22C2043E00F5BB1E /* CoreFoundation.framework */; };
-		D782D52122C2044400F5BB1E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D52022C2044400F5BB1E /* CoreTelephony.framework */; };
-		D782D52322C2044A00F5BB1E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D52222C2044A00F5BB1E /* SystemConfiguration.framework */; };
-		D782D52522C2045000F5BB1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D52422C2045000F5BB1E /* CoreGraphics.framework */; };
-		D782D52722C2045700F5BB1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D52622C2045700F5BB1E /* Foundation.framework */; };
-		D782D52922C2045D00F5BB1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D52822C2045D00F5BB1E /* UIKit.framework */; };
-		D782D52B22C2046400F5BB1E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D52A22C2046400F5BB1E /* Security.framework */; };
-		D782D52D22C2046900F5BB1E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D52C22C2046900F5BB1E /* libz.tbd */; };
-		D782D52F22C2047200F5BB1E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D52E22C2047200F5BB1E /* UserNotifications.framework */; };
-		D782D53122C2047900F5BB1E /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D782D53022C2047900F5BB1E /* libresolv.tbd */; };
 		DAD9A0E0F40D3984B78A22F8D3CDAB45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
 /* End PBXBuildFile section */
@@ -149,11 +138,6 @@
 		D746D29822C1DFDF0016A840 /* BNModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNModel.m; path = BDLibWorkingOC/Classes/BNModel.m; sourceTree = "<group>"; };
 		D746D29922C1DFDF0016A840 /* UIImage+BNImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+BNImage.h"; path = "BDLibWorkingOC/Classes/UIImage+BNImage.h"; sourceTree = "<group>"; };
 		D77B07CA7D221E3EC46B93C00BF37CDE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		D782D51722C2042400F5BB1E /* jpush-ios-3.2.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.2.1.a"; sourceTree = "<group>"; };
-		D782D51822C2042400F5BB1E /* jpush-extension-ios-1.1.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-extension-ios-1.1.2.a"; sourceTree = "<group>"; };
-		D782D51922C2042400F5BB1E /* JPushNotificationExtensionService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPushNotificationExtensionService.h; sourceTree = "<group>"; };
-		D782D51A22C2042400F5BB1E /* JPUSHService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
-		D782D51B22C2042400F5BB1E /* jcore-ios-2.0.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.0.2.a"; sourceTree = "<group>"; };
 		D782D51C22C2043900F5BB1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		D782D51E22C2043E00F5BB1E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		D782D52022C2044400F5BB1E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
@@ -192,17 +176,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D782D53122C2047900F5BB1E /* libresolv.tbd in Frameworks */,
-				D782D52F22C2047200F5BB1E /* UserNotifications.framework in Frameworks */,
-				D782D52D22C2046900F5BB1E /* libz.tbd in Frameworks */,
-				D782D52B22C2046400F5BB1E /* Security.framework in Frameworks */,
-				D782D52922C2045D00F5BB1E /* UIKit.framework in Frameworks */,
-				D782D52722C2045700F5BB1E /* Foundation.framework in Frameworks */,
-				D782D52522C2045000F5BB1E /* CoreGraphics.framework in Frameworks */,
-				D782D52322C2044A00F5BB1E /* SystemConfiguration.framework in Frameworks */,
-				D782D52122C2044400F5BB1E /* CoreTelephony.framework in Frameworks */,
-				D782D51F22C2043E00F5BB1E /* CoreFoundation.framework in Frameworks */,
-				D782D51D22C2043900F5BB1E /* CFNetwork.framework in Frameworks */,
 				A0F9458335270BDF53C0A7BEFE28E81D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +241,6 @@
 		3221E20C9FBFFB290CF94018C4C96184 /* BDLibWorkingOC */ = {
 			isa = PBXGroup;
 			children = (
-				D782D51622C2042400F5BB1E /* Lib */,
 				D746D29722C1DFDF0016A840 /* BNModel.h */,
 				D746D29822C1DFDF0016A840 /* BNModel.m */,
 				D746D29922C1DFDF0016A840 /* UIImage+BNImage.h */,
@@ -391,18 +363,6 @@
 				DAC68398F87CCBEA3582C52E0977D0CE /* Pods_BDLibWorkingOC_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D782D51622C2042400F5BB1E /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				D782D51722C2042400F5BB1E /* jpush-ios-3.2.1.a */,
-				D782D51822C2042400F5BB1E /* jpush-extension-ios-1.1.2.a */,
-				D782D51922C2042400F5BB1E /* JPushNotificationExtensionService.h */,
-				D782D51A22C2042400F5BB1E /* JPUSHService.h */,
-				D782D51B22C2042400F5BB1E /* jcore-ios-2.0.2.a */,
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		E8E5281C3A68639D30D2C815E0B78C2E /* Pods-BDLibWorkingOC_Example */ = {
