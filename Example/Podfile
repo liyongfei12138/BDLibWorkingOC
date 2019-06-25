@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'BDLibWorkingOC_Example' do
+  pod 'BDLibWorkingOC', :path => '../'
+
+  target 'BDLibWorkingOC_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
