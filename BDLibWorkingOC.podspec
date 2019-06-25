@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BDLibWorkingOC'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'hust addep'
 
 
@@ -25,6 +25,6 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'BDLibWorkingOC/Classes/**/*'
   
-  s.dependency 'Jpush'
+
 
 end

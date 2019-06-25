@@ -61,6 +61,7 @@
     _imageView = [UIImageView new];
     _imageView.userInteractionEnabled = YES;
     [_imageView setImage:image];
+    _imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:_imageView];
     
 
