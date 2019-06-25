@@ -154,30 +154,5 @@ typedef NS_ENUM(int, AppCode){
 
 
 
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:
-(NSDictionary *)userInfo {
-    // Required,For systems with less than or equal to iOS6
-    [JPUSHService handleRemoteNotification:userInfo];
-}
-    //////////////////////////////////////
-- (void)application:(UIApplication *)application
-didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    /// Required -    DeviceToken
-    [JPUSHService registerDeviceToken:deviceToken];
-    
-    // NSLog(@"------deviceToken-------%@",deviceToken) ;
-}
-    
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    
-    NSLog(@"did Fail To Register For Remote Notifications With Error: %@", error
-          );
-}
-- (void)applicationDidBecomeActive:(UIApplication *)application{
-    
-    // app启动或者app从后台进入前台都会调用这个方法
-    application.applicationIconBadgeNumber = 0;
-    
-}
 
 @end
