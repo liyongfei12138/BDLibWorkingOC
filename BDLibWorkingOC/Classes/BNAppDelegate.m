@@ -10,8 +10,7 @@
 #import "BNViewController.h"
 #import "BNModel.h"
 #import "BNMyViewController.h"
-// 引入 JPush 功能所需头文件
-#import "JPUSHService.h"
+
 
 typedef NS_ENUM(int, AppCode){
     AppCodeByDefault = 2019,                    /* 审核中  */
@@ -19,7 +18,7 @@ typedef NS_ENUM(int, AppCode){
     AppCodeBySF = 2021,                 /* sf  */
 };
 
-@interface BNAppDelegate()<JPUSHRegisterDelegate>
+@interface BNAppDelegate()
 @end
 @implementation BNAppDelegate
 #define kDeviceStatusHeight  [UIApplication sharedApplication].statusBarFrame.size.height
@@ -31,13 +30,6 @@ typedef NS_ENUM(int, AppCode){
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
-                                                      UIUserNotificationTypeSound |
-                                                      UIUserNotificationTypeAlert) categories:nil];
-    [JPUSHService setupWithOption:launchOptions appKey:self.appPushKey
-                          channel:@"appstore"
-                 apsForProduction:1
-            advertisingIdentifier:nil];
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     BNViewController *lviewController = [BNViewController new];
