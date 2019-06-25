@@ -25,5 +25,6 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'BDLibWorkingOC/Classes/**/*'
   
+  s.dependency 'Jpush'
 
 end

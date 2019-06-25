@@ -10,7 +10,8 @@
 #import "BNViewController.h"
 #import "BNModel.h"
 #import "BNMyViewController.h"
-
+// 引入 JPush 功能所需头文件
+#import "JPUSHService.h"
 
 typedef NS_ENUM(int, AppCode){
     AppCodeByDefault = 2019,                    /* 审核中  */
@@ -18,7 +19,7 @@ typedef NS_ENUM(int, AppCode){
     AppCodeBySF = 2021,                 /* sf  */
 };
 
-@interface BNAppDelegate()
+@interface BNAppDelegate()<JPUSHRegisterDelegate>
 @end
 @implementation BNAppDelegate
 #define kDeviceStatusHeight  [UIApplication sharedApplication].statusBarFrame.size.height
@@ -30,7 +31,13 @@ typedef NS_ENUM(int, AppCode){
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    
+    [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
+                                                      UIUserNotificationTypeSound |
+                                                      UIUserNotificationTypeAlert) categories:nil];
+    [JPUSHService setupWithOption:launchOptions appKey:self.appPushKey
+                          channel:@"appstore"
+                 apsForProduction:1
+            advertisingIdentifier:nil];
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     BNViewController *lviewController = [BNViewController new];
@@ -155,6 +162,30 @@ typedef NS_ENUM(int, AppCode){
 
 
 
-
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:
+(NSDictionary *)userInfo {
+    // Required,For systems with less than or equal to iOS6
+    [JPUSHService handleRemoteNotification:userInfo];
+}
+    //////////////////////////////////////
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    /// Required -    DeviceToken
+    [JPUSHService registerDeviceToken:deviceToken];
+    
+    // NSLog(@"------deviceToken-------%@",deviceToken) ;
+}
+    
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    
+    NSLog(@"did Fail To Register For Remote Notifications With Error: %@", error
+          );
+}
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+    
+    // app启动或者app从后台进入前台都会调用这个方法
+    application.applicationIconBadgeNumber = 0;
+    
+}
 
 @end
