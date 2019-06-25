@@ -1,0 +1,6 @@
+framework module BDLibWorkingOC {
+  umbrella header "BDLibWorkingOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

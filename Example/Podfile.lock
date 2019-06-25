@@ -1,0 +1,27 @@
+PODS:
+  - BDLibWorkingOC (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - BDLibWorkingOC (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  BDLibWorkingOC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BDLibWorkingOC: 907f567af46668cee181b9cb8cca926876ac6b96
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 4d526c55bef03570316e26aa69d1628ec4f1f190
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,22 @@
+{
+  "name": "BDLibWorkingOC",
+  "version": "0.1.0",
+  "summary": "A short description of BDLibWorkingOC.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/liyongfei12138/BDLibWorkingOC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liyongfei12138": "miap972712779@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/liyongfei12138/BDLibWorkingOC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BDLibWorkingOC/Classes/**/*"
+}

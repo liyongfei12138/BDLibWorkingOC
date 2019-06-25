@@ -6,9 +6,9 @@
 //  Copyright (c) 2019 liyongfei12138. All rights reserved.
 //
 
-#import "BNAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation BNAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
