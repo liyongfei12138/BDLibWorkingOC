@@ -47,6 +47,8 @@
 		D746D29D22C1DFDF0016A840 /* BNModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D746D29722C1DFDF0016A840 /* BNModel.h */; };
 		D746D29E22C1DFDF0016A840 /* BNModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D746D29822C1DFDF0016A840 /* BNModel.m */; };
 		D746D29F22C1DFDF0016A840 /* UIImage+BNImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D746D29922C1DFDF0016A840 /* UIImage+BNImage.h */; };
+		D782D5F222CC440C00F5BB1E /* BNProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = D782D5F022CC440B00F5BB1E /* BNProgressView.h */; };
+		D782D5F322CC440C00F5BB1E /* BNProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D782D5F122CC440B00F5BB1E /* BNProgressView.m */; };
 		DAD9A0E0F40D3984B78A22F8D3CDAB45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A94602875A48A997AD3F08A33E6EAA /* Foundation.framework */; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
 /* End PBXBuildFile section */
@@ -149,6 +151,8 @@
 		D782D52C22C2046900F5BB1E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		D782D52E22C2047200F5BB1E /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
 		D782D53022C2047900F5BB1E /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		D782D5F022CC440B00F5BB1E /* BNProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNProgressView.h; path = BDLibWorkingOC/Classes/BNProgressView.h; sourceTree = "<group>"; };
+		D782D5F122CC440B00F5BB1E /* BNProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNProgressView.m; path = BDLibWorkingOC/Classes/BNProgressView.m; sourceTree = "<group>"; };
 		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		DAC68398F87CCBEA3582C52E0977D0CE /* Pods_BDLibWorkingOC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDLibWorkingOC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 				D746D29322C1DE520016A840 /* BNAppDelegate.m */,
 				D746D28722C1DE090016A840 /* BNMyViewController.h */,
 				D746D28522C1DE080016A840 /* BNMyViewController.m */,
+				D782D5F022CC440B00F5BB1E /* BNProgressView.h */,
+				D782D5F122CC440B00F5BB1E /* BNProgressView.m */,
 				D746D28922C1DE090016A840 /* BNViewController.h */,
 				D746D28222C1DE080016A840 /* BNViewController.m */,
 				D746D28822C1DE090016A840 /* UIImage+JPushImage.h */,
@@ -433,6 +439,7 @@
 				D746D29122C1DE090016A840 /* BNViewController.h in Headers */,
 				D746D29D22C1DFDF0016A840 /* BNModel.h in Headers */,
 				D746D29F22C1DFDF0016A840 /* UIImage+BNImage.h in Headers */,
+				D782D5F222CC440C00F5BB1E /* BNProgressView.h in Headers */,
 				D746D29022C1DE090016A840 /* UIImage+JPushImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +592,7 @@
 				D746D28D22C1DE090016A840 /* BNMyViewController.m in Sources */,
 				D746D29E22C1DFDF0016A840 /* BNModel.m in Sources */,
 				D746D29C22C1DFDF0016A840 /* UIImage+BNImage.h.m in Sources */,
+				D782D5F322CC440C00F5BB1E /* BNProgressView.m in Sources */,
 				D746D29522C1DE520016A840 /* BNAppDelegate.m in Sources */,
 				D746D28A22C1DE090016A840 /* BNViewController.m in Sources */,
 				27C55B9A711D4995D30B9813D08C694D /* BDLibWorkingOC-dummy.m in Sources */,

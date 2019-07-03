@@ -1,15 +1,15 @@
 #import "BNMyViewController.h"
-
+#import "BNProgressView.h"
 #import "UIImage+BNImage.h"
 
 
 
-@interface BNMyViewController ()<UIScrollViewDelegate,UIGestureRecognizerDelegate>
+@interface BNMyViewController ()<UIScrollViewDelegate,UIGestureRecognizerDelegate,UIWebViewDelegate>
 @property (nonatomic,strong) NSString *titleName;
 @property (nonatomic,assign) CGRect webViewFrame;
 @property (nonatomic,strong) NSString* webUrl;
 @property (nonatomic,strong) UIWebView *webView;
-
+@property (nonatomic, strong) BNProgressView *progressView;
 
 @end
 
@@ -38,11 +38,18 @@
     [self configWebView];
 
 }
+    
+#define kDeviceStatusHeight  [UIApplication sharedApplication].statusBarFrame.size.height
+#define kDeviceWidth  [UIScreen mainScreen].bounds.size.width
+#define kDeviceHeight [UIScreen mainScreen].bounds.size.height
+    
+    
 - (void)configWebView
 {
     self.webView = [[UIWebView alloc] init];;
     self.webView.frame = self.webViewFrame;
     self.webView .scrollView.delegate = self;
+    self.webView.delegate = self;
     NSURL *url = [NSURL URLWithString:self.webUrl];
     
     
@@ -51,10 +58,27 @@
     [self.webView loadRequest:urlReuqest];
     
     [self.view addSubview:self.webView];
+    
+    self.progressView = [[BNProgressView alloc] initWithFrame:CGRectMake(0,kDeviceStatusHeight , kDeviceWidth, 4)];
+    [self.view addSubview:self.progressView];
 }
 
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    [self.progressView beginLoadView];
+}
 
-
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    
+    [self.progressView finishLoadView];
+}
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    [self.progressView hidView];
+    
+}
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+    [self.progressView hidView];
+    return YES;
+}
 
 
 @end
