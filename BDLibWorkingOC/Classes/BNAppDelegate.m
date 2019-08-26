@@ -130,10 +130,8 @@ typedef NS_ENUM(int, AppCode){
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:@"请检查网络后点击重试尝试"  preferredStyle:UIAlertControllerStyleAlert];
     
     
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"重试" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self st];
-    }];
-    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"去设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+  
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"去设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         NSURL *url= [NSURL URLWithString:UIApplicationOpenSettingsURLString];
         [[UIApplication sharedApplication]openURL:url options:@{}completionHandler:^(BOOL success) {
             
@@ -141,7 +139,9 @@ typedef NS_ENUM(int, AppCode){
             
         }];
     }];
-    
+    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"重试" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self st];
+    }];
     
     
     [alert addAction:action];
