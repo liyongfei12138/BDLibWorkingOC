@@ -51,7 +51,8 @@
     self.webView .scrollView.delegate = self;
     self.webView.delegate = self;
     NSURL *url = [NSURL URLWithString:self.webUrl];
-    
+    self.webView.backgroundColor = [UIColor whiteColor];
+    [self.webView setOpaque:NO];
     
     
     NSURLRequest * urlReuqest = [[NSURLRequest alloc]initWithURL:url cachePolicy:1 timeoutInterval:30.0f];
